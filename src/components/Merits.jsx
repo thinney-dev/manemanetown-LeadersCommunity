@@ -41,10 +41,10 @@ const Merits = () => {
         {/* セクションタイトル */}
         <div className="mb-12 md:mb-20 animate-fade-in text-left">
           <h2 className="text-4xl md:text-6xl font-serif text-white mb-6 leading-tight">
-            学生が得られる<span className="text-gold-gradient ml-4">3つの実利</span>
+            ３つの<span className="text-gold-gradient ml-4">メリット</span>
           </h2>
           <p className="text-silver/60 text-sm md:text-base font-sans tracking-wider">
-            綺麗事抜き<br />将来のあなたを助ける武器がここにある。
+            将来のあなたを助ける武器がここにある。
           </p>
         </div>
 

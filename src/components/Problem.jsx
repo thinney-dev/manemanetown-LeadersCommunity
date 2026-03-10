@@ -48,9 +48,9 @@ const Problem = () => {
       {/* 下部のメッセージ */}
       <div className="text-center mt-24 animate-fade-in delay-200 relative z-10">
         <p className="text-white font-serif text-base md:text-xl tracking-wider leading-loose">
-          <span className="inline-block whitespace-nowrap">このコミュニティは、ただのサークルではない。</span><br />
+          <span className="inline-block whitespace-nowrap">このコミュニティは、娯楽目的のサークルではありません。</span><br />
           <span className="inline-block whitespace-nowrap">
-            <span className="text-gold-gradient">社会で通用する自分軸</span> を作る場所だ。
+            <span className="text-gold-gradient">社会で通用する自分軸</span> を作る場所です。
           </span>
         </p>
       </div>

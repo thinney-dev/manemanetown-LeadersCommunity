@@ -20,7 +20,7 @@ const Target = () => {
             こんな<span className="text-gold-gradient">メンバー</span>を<br className="md:hidden" />求めています
           </h2>
           <p className="text-silver/60 text-sm md:text-base font-sans tracking-wide">
-            今の実力は問わない。<br />必要なのは、この想いだけ。
+            今の実力は問いません。<br />必要なのはこの想いだけ。
           </p>
         </div>
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import heroBg from './assets/hero-bg.jpg';
 import Hero from './components/Hero';
+import About from './components/About';
 import Message from './components/Message';
 import Problem from './components/Problem';
 import Merits from './components/Merits';
@@ -50,6 +51,7 @@ function App() {
       {/* メインコンテンツ */}
       <div className="relative z-10">
         <Hero />
+        <About />
         <Message />
         <Problem />
         <Merits />

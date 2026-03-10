@@ -23,51 +23,40 @@ const Hero = () => {
         }
       `}</style>
 
-      {/* メインコンテンツ：flex-1 を追加して、ロゴの上の空きスペースの真ん中に配置 */}
-      <div className="relative z-10 text-center px-2 md:px-6 animate-fade-in space-y-5 md:space-y-8 flex-1 flex flex-col justify-center items-center w-full mt-[2vh] md:mt-[-10vh] pb-8 md:pb-0 pt-16 md:pt-0">
+      <div className="relative z-10 text-center px-2 md:px-6 animate-fade-in flex-1 flex flex-col justify-center items-center w-full mt-[-2vh] md:mt-[-10vh] pb-8 md:pb-0 pt-8 md:pt-0">
         
-        {/* タグライン */}
-        <div className="inline-block border border-gold-400/50 px-6 py-2 backdrop-blur-sm bg-navy-900/30">
-          <p className="text-gold-gradient tracking-[0.2em] text-xs md:text-sm font-sans font-bold">
+        {/* ▼▼▼ 修正1：タグラインを左右分割の外に出し、画面中央に配置・枠線を削除しました ▼▼▼ */}
+        <div className="mb-6 md:mb-10 w-full text-center">
+          <p className="text-gold-gradient tracking-[0.2em] text-xs md:text-sm font-sans font-bold drop-shadow-lg">
             関西唯一・4大外資戦略コンサル認定団体
           </p>
         </div>
 
-        {/* メインタイトル */}
-        <h1 className="text-4xl sm:text-5xl md:text-8xl font-serif text-white font-medium tracking-wide leading-tight drop-shadow-2xl whitespace-nowrap">
-          みちを歩める存在へ
-        </h1>
-
-        {/* コンセプトテキストエリア */}
-        <div className="space-y-4 md:space-y-6 pt-2 md:pt-4">
+        {/* PC版で左右に並べるためのラッパー */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 w-full max-w-6xl mx-auto">
           
-          {/* 左揃えラッパー */}
-          <div className="inline-block text-left">
-            <p className="text-silver/70 text-xs md:text-sm font-sans tracking-[0.15em] leading-loose md:leading-loose">
-              単なる就活対策ではなく、社会で通用する<br className="md:hidden" />
-              
-              <span className="whitespace-nowrap">
-                <span className="text-white border-b border-gold-400/50">論理的思考力</span>
-                <span className="mx-1 md:mx-2"></span>
-                <span className="text-white border-b border-gold-400/50">対話力</span>
-                <span className="mx-1 md:mx-2"></span>
-                <span className="text-white border-b border-gold-400/50">社会貢献意識</span>を。
-              </span><br />
-              
-              本質的な成長を通して、<br className="md:hidden" />世界で活躍できるキャリアを切り拓く。
+          {/* === 左側：MLCロゴ === */}
+          <div className="flex flex-col items-center justify-center space-y-2 md:space-y-3">
+            <h1 className="text-8xl sm:text-[7rem] md:text-[9rem] font-serif text-gold-gradient tracking-widest drop-shadow-2xl font-normal leading-none pl-4 md:pl-8">
+              MLC
+            </h1>
+            <p className="text-sm sm:text-base md:text-lg font-serif text-gold-gradient tracking-[0.2em] drop-shadow-md">
+              まねまねタウン Leaders Community
             </p>
           </div>
 
-          {/* サブコピー */}
-          <p className="text-white/95 text-sm md:text-base font-serif tracking-widest drop-shadow-md">
-            自分らしく生きる人を増やす<br className="md:hidden"/>実践型学生コミュニティ
-          </p>
-          
-        </div>
+          {/* === 右側：サブコピー === */}
+          {/* ▼▼▼ 修正2：枠線と背景を削除し、テキストだけにしました（高さのズレ設定も解除しています） ▼▼▼ */}
+          <div className="flex flex-col items-center md:items-start">
+            <p className="text-white/95 text-sm md:text-base font-serif tracking-widest drop-shadow-md whitespace-nowrap">
+              自分らしく生きる人を増やす<br className="md:hidden"/>実践型学生コミュニティ
+            </p>
+          </div>
 
+        </div>
       </div>
 
-      {/* 企業ロゴのエリア：スマホでは absolute を外して重なりを防止 */}
+      {/* 企業ロゴのエリア */}
       <div className="w-full md:absolute md:bottom-24 md:left-0 md:bg-white md:py-4 z-20 overflow-hidden mt-auto md:mt-0">
         
         {/* PC版のみ表示：横スクロール */}
