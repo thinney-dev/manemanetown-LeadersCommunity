@@ -7,7 +7,6 @@ const Closing = () => {
     >
       <div className="relative z-10 max-w-4xl mx-auto space-y-12">
         
-        {/* ▼▼▼ 修正：アニメーション関連のクラスを削除し、初めから表示 ▼▼▼ */}
         <div className="space-y-12">
           <h2 className="text-4xl md:text-6xl font-serif text-white leading-tight drop-shadow-2xl">
             共に一歩を<br />
@@ -19,21 +18,19 @@ const Closing = () => {
           </p>
         </div>
 
-        {/* ボタン・コピーライト部分：初めから表示 */}
+        {/* ボタン・コピーライト部分 */}
         <div className="space-y-12 pt-8">
           <div className="flex flex-col md:flex-row gap-6 justify-center">
+            {/* ▼ リンク先をフォームに変更し、別タブで開くように設定 ▼ */}
             <a 
-              href="#entry" 
+              href="https://forms.gle/LfG5TbG8iLJGsupbA" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-gold-400 text-navy-900 font-bold py-4 px-12 rounded hover:bg-white transition duration-300 shadow-lg hover:shadow-[0_0_30px_rgba(255,255,255,0.4)]"
             >
               コミュニティに参加する
             </a>
-            <a 
-              href="#entry" 
-              className="bg-navy-900/80 border border-white/30 text-white font-bold py-4 px-12 rounded hover:bg-white/10 transition duration-300 backdrop-blur-sm"
-            >
-              体験に申し込む
-            </a>
+            {/* ▼ 「体験に申し込む」ボタンを削除しました ▼ */}
           </div>
 
           <div className="pt-20 text-silver/30 text-xs">
